@@ -2,18 +2,96 @@
 
   <head>
     <meta name="google-site-verification" content="3Gr1DMgbHeOi8YmnWXGRFH6Di1qPRAVWyyth_5nzs6Y" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            width: 100%;
+            height: 100vh;
+            /* Full viewport height */
+            color: white;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* Align text to the top */
+            text-align: center;
+            padding-top: 80px;
+            /* Adds space to avoid being hidden behind fixed nav */
+        }
+        .one {
+            background-color: #EF5354;
+        }
+        .two {
+            background-color: #E03B8B;
+        }
+        .three {
+            background-color: #3944F7;
+        }
+
+        .four {
+            background-color: #38CC77;
+        }
+        .nav {
+            position: fixed;
+            top: 10px;
+            width: 100%;
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 100;
+        }
+        .btn {
+            color: white;
+            background-color: #38CC77;
+            height: 40px;
+            width: 90px;
+            padding: 2px;
+            border: 2px solid black;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+        }
+    </style>
   </head>
 
 <body>
   <h1>DIGITALT VERKTYG</h1>
   <p>Welcome to my website!</p>
-  <iframe width="420" height="315"
+  <div class="nav">
+        <a href="#section1" class="btn">Section 1</a>
+        <a href="#section2" class="btn">Section 2</a>
+        <a href="#section3" class="btn">Section 3</a>
+        <a href="#section4" class="btn">Section 4</a>
+    </div>
+    <div class="section one" id="section1">
+      <p>Spara upp till 80% på Coinbase! (Gör INTE detta fel)</p>
+        <iframe width="420" height="315"
 src="https://www.youtube.com/embed/a08ykhr_cYc">
 </iframe>
-  <p>Spara upp till 80% på Coinbase! (Gör INTE detta fel)</p>
  <p>Visste du att Coinbase tar en mycket hög avgift varje gång du trycker på den blå "Köp"-knappen? De flesta krypto-nybörjare betalar alldeles för mycket i avgifter utan att veta om det. Men idag tar vi död på den fällan!</p>
 <p>I denna video visar jag dig ett enkelt men genialt trick som sparar dig upp till 80% i avgifter på varje köp och sälj på Coinbase. Vi aktiverar funktionen "Coinbase Advanced" - en funktion som är gratis att använda, men som färre nybörjare känner till eller vågar klicka på.</p>
 <p>#CoinbaseAdvanced #SparaGebyr #KryptoSverige #InvesteringFörNybörjare #CoinbaseSverige #Kryptovaluta #CoinbaseAvgift #KöpKrypto</p>
+    </div>
+    <div class="section two" id="section2">
+        Section 2: Here’s some content for the second section.
+    </div>
+    <div class="section three" id="section3">
+        Section 3: More details and information here.
+    </div>
+    <div class="section four" id="section4">
+        Section 4: Final section with additional content.
+    </div>
 </body>
 
 </html>
